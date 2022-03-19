@@ -1,1 +1,0 @@
-# smpamerta.github.io
