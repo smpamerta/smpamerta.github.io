@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* variable */
+:root {
+    --white: #ffffff;
+    --lighter: #24fff0;
+    --darker: #1a7872;
+    --body-color: #f5fffe;
+
+
+    /* CSS HEX */
+    --nyanza: #d8f3dcff;
+    --turquoise-green-2: #95d5b2ff;
+    --ocean-green: #74c69dff;
+    --button-color: #52b788ff;
+    --darker-color: #2d6a4fff;
+    --text-color: #081c15ff;
+
+    /* font */
+    --biggest-font-size: 3rem;
+    --big-font-size: 1.25rem;
+    --normal-font-size: .938rem;
+
+    /* font weight */
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /* z index */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.btn {
+    padding: 0.5rem;
+    background-color: var(--darker)
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+}
+
+header a {
+    color: white;
+}
+
+
+.navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.icon img {
+    width: 30px;
+    height: 20px;
+}
+
+.nav {
+    display: none;
+}
+
+.responsive {
+    display: flex;
+    flex-direction: column;
+    border-top: solid 1px white;
+    background-color: rgba(26, 120, 114, 0.8);
+    padding: 1.5rem;
+
+}
+
+.responsive-menu {
+    background-color: rgba(26, 120, 114, 0.8);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    /* height: 100vh; */
+}
+
+.nav-page .responsive a,
+.nav-page .responsive-menu a {
+    color: white;
+}
+
+.nav-page {
+    background-color: rgba(26, 120, 114, 1);
+
+}
+
+.navbar-list {
+    margin: 0.5rem 0;
+}
+
+
+/* main welcome */
+.bg-img {
+    background: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* z-index: 50; */
+    opacity: 0.4;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    z-index: -100;
+}
+
+.home-container {
+    position: relative;
+    height: 100vh;
+    display: grid;
+    color: white;
+    align-content: center;
+    padding: 7rem 1.5rem 0;
+    line-height: 1.2;
+}
+
+.home-container a {
+    color: white;
+}
+
+.home-container h1 {
+    font-size: var(--biggest-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.btn-home {
+    margin: 2rem 0;
+}
+
+.btn-home .btn {
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    width: 130px;
+    cursor: pointer;
+}
+
+/* main-page */
+.main-page {
+    margin: 4rem 1.5rem 0;
+    padding-top: 2rem;
+}
+
+.gallery .title,
+.tanaman .title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    align-items: center;
+}
+
+.title h5,
+.title h6 {
+    font-weight: 500;
+}
+
+.photo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-row: 3;
+}
+
+.photo-box,
+.tanaman-box {
+    position: relative;
+}
+
+.text-box {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+    /* padding: 0.4rem; */
+    border-radius: 0.5rem;
+}
+
+.photo1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.photo2 img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.tanaman {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-tanaman {
+    display: flex;
+    flex-direction: column;
+}
+
+.tanaman-box {
+    /* height: 50px; */
+    width: 100%;
+}
+
+.tanaman-box img {
+    width: 100%;
+    /* object-fit: fill; */
+    /* width: 200px; */
+    height: 20vh;
+    object-fit: cover;
+}
+
+.main-tanaman-detail {
+    margin: 4rem 0;
+}
+
+.detail {
+    margin: 1.5rem;
+}
+
+.cover-img img {
+    width: 100%;
+    border-radius: 15px 0 50px 0;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+.detail-title {
+    color: #1a7872;
+    margin: 2rem 0;
+}
+
+.klasifikasi {
+    margin: 2rem 0 1.5rem;
+    display: grid;
+    /* grid-template-columns: minmax(70px, 70px) 1fr;
+    align-items: center; */
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.title-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.klasifikasi img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.photo-flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.photo-flex img {
+    /* max-width: 40%; */
+    width: 100%;
+}
+
+.flex-column {
+    /* display: flex; */
+    /* flex-direction: row;
+    margin: 0.5rem; */
+    flex: 50%;
+}
+
+.list {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    margin: 0.5rem 0;
+    padding: 1rem;
+}
+
+.list img {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+/* daftar barcode */
+.barcode-list,
+.tanaman-list,
+.foto-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+}
+
+.foto-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 2rem;
+}
+
+.barcode-item,
+.tanaman-item,
+.foto-item {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.barcode-item img,
+.tanaman-item img {
+    width: 50%;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+.foto-item img {
+    width: 75%;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+.tentang {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.tentang-item {
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: var(--text-color);
+    padding: 1rem 2rem 0;
+    color: white;
+    font-size: 0.7rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.medsos-list {
+
+    padding: 1rem 2rem;
+}
+
+.medsos {
+    display: flex;
+    align-items: center;
+}
+
+.medsos-item {
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.medsos-item img {
+    width: 20px;
+    border-radius: 0.5rem;
+}
+
+.medsos-item a {
+    color: white;
+}
+
+.medsos-item a:hover {
+    cursor: pointer;
+}
