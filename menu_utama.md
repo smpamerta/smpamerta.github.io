@@ -42,7 +42,7 @@
                 <div class="photo">
                     <div class="photo-box photo1">
                         <a href="page-foto/verifikasi.md">
-                            <img src="img/kegiatan/9.JPG" alt="">
+                            <img src="img/kegiatan/9.jpg" alt="">
                             <div class="text-box">
                                 <h6>Verifikasi Adiwiyata Kab.Bogor</h6>
                             </div>
@@ -50,7 +50,7 @@
                     </div>
                     <div class="photo-box photo3">
                         <a href="page-foto/penanaman.md">
-                            <img src="img/kegiatan/nanam.JPG" alt="">
+                            <img src="img/kegiatan/nanam.jpg" alt="">
                             <div class="text-box">
                                 <h6>Penanaman bibit</h6>
                             </div>
@@ -58,7 +58,7 @@
                     </div>
                     <div class="photo-box photo2">
                         <a href="page-foto/kegiatan.md">
-                            <img src="img/kegiatan/pangan.JPG" alt="">
+                            <img src="img/kegiatan/pangan.jpg" alt="">
                             <div class="text-box">
                                 <h6>Kegiatan Adiwiyata</h6>
                             </div>
